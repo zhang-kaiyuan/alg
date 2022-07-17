@@ -2,7 +2,7 @@ package com.kaiy.sort;
 
 import com.kaiy.common.MyArrayUtil;
 
-public class BubbleSort {
+public class BubbleAbstractSort extends AbstractSort {
 
     private static int[] bubbleSort(int[] arr) {
         if (arr == null || arr.length < 2) {
@@ -22,6 +22,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        MyArrayUtil.sortLogarithmic(BubbleSort::bubbleSort);
+        sortLogarithmic(BubbleAbstractSort::bubbleSort);
     }
+
 }

@@ -2,16 +2,16 @@ package com.kaiy.sort;
 
 import com.kaiy.common.MyArrayUtil;
 
-public class SelectionSort {
+public class SelectionAbstractSort extends AbstractSort {
 
     private static int[] selectionSort(int[] array) {
         if (array == null || array.length < 2) {
             return array;
         }
-        int index = 0;
         for (int i = 0; i < array.length; i++) {
-            int min = Integer.MAX_VALUE;
-            for (int j = i; j < array.length; j++) {
+            int min = array[i];
+            int index = i;
+            for (int j = i + 1; j < array.length; j++) {
                 if (array[j] < min) {
                     min = array[j];
                     index = j;
@@ -23,7 +23,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        MyArrayUtil.sortLogarithmic(SelectionSort::selectionSort);
+        sortLogarithmic(SelectionAbstractSort::selectionSort);
     }
 
 }
