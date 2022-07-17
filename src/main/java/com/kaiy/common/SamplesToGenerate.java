@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SamplesToGenerate {
 
     private static final int SAMPLE_SIZE = 100;
-    private static final int SAMPLE_RANGE = 100;
+    private static final int SAMPLE_RANGE = 1000;
 
     public static int[] generateRandomArray(boolean negative) {
         int size = (int) (Math.random() * SAMPLE_SIZE);
