@@ -110,7 +110,7 @@ O代表最差情况
 -   右边让他有序
 -   想办法把两边合并 并有序 
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220714213036620.png" alt="image-20220714213036620" style="zoom:25%;" />
+<img src="./image/image-20220714213036620.png" alt="image-20220714213036620" style="zoom:25%;" />
 
 -   准备一个同等长度的额外结构
 -   两个指针互相比较 哪个小哪个往里面放
@@ -264,7 +264,7 @@ O代表最差情况
 
 ### 排序算法总结
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220717104503252.png" alt="image-20220717104503252" style="zoom:50%;" />
+<img src="./image/image-20220717104503252.png" alt="image-20220717104503252" style="zoom:50%;" />
 
 -   不基于比较的排序，对样本数据要求严格，不易改写
 -   基于比较的排序，时间复杂度极限就是O(N*logN)
@@ -438,7 +438,7 @@ N*2 + 1 = N << 1 | 1
 
 ##### 单链表
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713211921538.png" alt="image-20220713211921538" style="zoom:67%;" />
+<img src="./image/image-20220713211921538.png" alt="image-20220713211921538" style="zoom:67%;" />
 
 循环外声明前一个节点（用于将当前节点的next指向它实现反转）和下一个节点（用于记录）
 
@@ -505,7 +505,7 @@ Node f（Node node，int value）
 
 ##### 栈中有push pop getMin 三个方法 且都是O（1）的时间复杂度，如何实现
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713220709548.png" alt="image-20220713220709548" style="zoom:33%;" />
+<img src="./image/image-20220713220709548.png" alt="image-20220713220709548" style="zoom:33%;" />
 
 -   push操作，有增加一个最小栈，当前入栈的数和最小栈栈顶哪个数小 最小栈加谁
 -   pop操作，同步弹出 给数据栈的栈顶返回
@@ -515,7 +515,7 @@ Node f（Node node，int value）
 
 ##### 如何用栈结构实现队列结构
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713221900990.png" alt="image-20220713221900990" style="zoom:33%;" />
+<img src="./image/image-20220713221900990.png" alt="image-20220713221900990" style="zoom:33%;" />
 
 -   两个栈，一个push 一个pop
 -   只有pop为空的时候才能从push导入
@@ -525,7 +525,7 @@ Node f（Node node，int value）
 
 ###### 如何用队列结构实现栈结构
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713221557013.png" alt="image-20220713221557013" style="zoom:33%;" />
+<img src="./image/image-20220713221557013.png" alt="image-20220713221557013" style="zoom:33%;" />
 
 -   两个队列 一个data 一个help
 -   弹出的时候将前面数据导入help 最后一个数弹出
@@ -539,7 +539,7 @@ Node f（Node node，int value）
 
 推荐所有``递归``都画出脑图
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713222820909.png" alt="image-20220713222820909" style="zoom:33%;" />
+<img src="./image/image-20220713222820909.png" alt="image-20220713222820909" style="zoom:33%;" />
 
 ### 实现
 
@@ -550,7 +550,7 @@ Node f（Node node，int value）
     -   b 每次方法中的变量都是样本的几分之b
     -   d 除了两次调用之外的时间复杂度
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220713224500716.png" alt="image-20220713224500716" style="zoom:25%;" />
+<img src="./image/image-20220713224500716.png" alt="image-20220713224500716" style="zoom:25%;" />
 
 
 
@@ -639,7 +639,7 @@ TreeMap（按key的大小排序）`增、删、改、查`都是`O（logN）`的�
 
 
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220716174033115.png" alt="image-20220716174033115" style="zoom:25%;" />
+<img src="./image/image-20220716174033115.png" alt="image-20220716174033115" style="zoom:25%;" />
 
 
 
@@ -659,7 +659,7 @@ TreeMap（按key的大小排序）`增、删、改、查`都是`O（logN）`的�
 -   一个无序数组
 -   排序后每个元素都不会移动超过K
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220716174922120.png" alt="image-20220716174922120" style="zoom:25%;" />
+<img src="./image/image-20220716174922120.png" alt="image-20220716174922120" style="zoom:25%;" />
 
 
 
@@ -708,7 +708,7 @@ TreeMap（按key的大小排序）`增、删、改、查`都是`O（logN）`的�
     -   数量为0再退货，直接忽略
     -   得奖区获奖区两套时间，进出时间都重新计算
 
-    <img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220716230001588.png" alt="image-20220716230001588" style="zoom:15%;" />
+    <img src="./image/image-20220716230001588.png" alt="image-20220716230001588" style="zoom:15%;" />
 
     
 
@@ -793,11 +793,11 @@ public class HeapGreater<T> {
 
 
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220717105117662.png" alt="image-20220717105117662" style="zoom:20%;" />
+<img src="./image/image-20220717105117662.png" alt="image-20220717105117662" style="zoom:20%;" />
 
 
 
-<img src="/Users/zhangkaiyuan/Library/Application Support/typora-user-images/image-20220717110104980.png" alt="image-20220717110104980" style="zoom:25%;" />
+<img src="./image/image-20220717110104980.png" alt="image-20220717110104980" style="zoom:25%;" />
 
 -   每个字符串字符创建一条通向下一个字符的`路`
 -   每个节点增加两个值 
