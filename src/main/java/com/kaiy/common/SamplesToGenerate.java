@@ -1,7 +1,5 @@
 package com.kaiy.common;
 
-import java.util.Arrays;
-
 public class SamplesToGenerate {
 
     private static final int SAMPLE_SIZE = 100;
@@ -19,10 +17,6 @@ public class SamplesToGenerate {
 
     private static boolean whetherToGenerateNegative(boolean negative) {
         return negative && ((int) (Math.random() * 2) & 1) == 1;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(generateRandomArray(true)));
     }
 
 }

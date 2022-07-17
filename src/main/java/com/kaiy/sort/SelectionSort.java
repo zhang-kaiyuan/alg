@@ -2,7 +2,7 @@ package com.kaiy.sort;
 
 import com.kaiy.common.MyArrayUtil;
 
-public class SelectionAbstractSort extends AbstractSort {
+public class SelectionSort extends AbstractSort {
 
     private static int[] selectionSort(int[] array) {
         if (array == null || array.length < 2) {
@@ -23,7 +23,7 @@ public class SelectionAbstractSort extends AbstractSort {
     }
 
     public static void main(String[] args) {
-        sortLogarithmic(SelectionAbstractSort::selectionSort);
+        sortLogarithmic(SelectionSort::selectionSort);
     }
 
 }
