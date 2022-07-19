@@ -4,9 +4,9 @@ import com.kaiy.common.MyArrayUtil;
 
 public class InsertionSort extends AbstractSort {
 
-    private static int[] insertionSort(int[] arr) {
+    private static void insertionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
-            return arr;
+            return;
         }
         for (int i = 1; i < arr.length; i++) {
             for (int l = i; l > 0; l--) {
@@ -15,7 +15,6 @@ public class InsertionSort extends AbstractSort {
                 }
             }
         }
-        return arr;
     }
 
     public static void main(String[] args) {

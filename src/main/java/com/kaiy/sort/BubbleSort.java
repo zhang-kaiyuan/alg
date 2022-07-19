@@ -4,9 +4,9 @@ import com.kaiy.common.MyArrayUtil;
 
 public class BubbleSort extends AbstractSort {
 
-    private static int[] bubbleSort(int[] arr) {
+    private static void bubbleSort(int[] arr) {
         if (arr == null || arr.length < 2) {
-            return arr;
+            return;
         }
         // 注意这里的边界条件 很容易错
         // 将外层的i想成对于N的控制 每经历一次遍历 最大值就到N-1 下一次到N-1 直到1
@@ -18,7 +18,6 @@ public class BubbleSort extends AbstractSort {
                 }
             }
         }
-        return arr;
     }
 
     public static void main(String[] args) {

@@ -4,9 +4,9 @@ import com.kaiy.common.MyArrayUtil;
 
 public class SelectionSort extends AbstractSort {
 
-    private static int[] selectionSort(int[] array) {
+    private static void selectionSort(int[] array) {
         if (array == null || array.length < 2) {
-            return array;
+            return;
         }
         for (int i = 0; i < array.length; i++) {
             int min = array[i];
@@ -19,7 +19,6 @@ public class SelectionSort extends AbstractSort {
             }
             MyArrayUtil.swap(array, index, i);
         }
-        return array;
     }
 
     public static void main(String[] args) {
