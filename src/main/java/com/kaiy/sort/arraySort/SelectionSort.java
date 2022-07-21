@@ -1,6 +1,6 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
-import com.kaiy.common.MyArrayUtil;
+import com.kaiy.common.ArrayUtil;
 
 public class SelectionSort extends AbstractSort {
 
@@ -17,7 +17,7 @@ public class SelectionSort extends AbstractSort {
                     index = j;
                 }
             }
-            MyArrayUtil.swap(array, index, i);
+            ArrayUtil.swap(array, index, i);
         }
     }
 

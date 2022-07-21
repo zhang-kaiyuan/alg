@@ -1,14 +1,9 @@
 package com.kaiy.common;
 
+public class ArrayUtil {
 
-import java.util.Random;
-
-public class MyArrayUtil {
-
-    private MyArrayUtil() {
+    private ArrayUtil() {
     }
-
-    private static final Random random = new Random();
 
     public static void swap(int[] arr, int from, int to) {
         int temp = arr[from];
@@ -20,10 +15,6 @@ public class MyArrayUtil {
         int[] dest = new int[src.length];
         System.arraycopy(src, 0, dest, 0, src.length);
         return dest;
-    }
-
-    public static int randomInt(int limit) {
-        return random.nextInt(limit);
     }
 
 }

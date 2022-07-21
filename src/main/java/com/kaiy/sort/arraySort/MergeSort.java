@@ -1,4 +1,4 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
 public class MergeSort extends AbstractSort {
 

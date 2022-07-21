@@ -1,6 +1,6 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
-import com.kaiy.common.MyArrayUtil;
+import com.kaiy.common.ArrayUtil;
 
 public class InsertionSort extends AbstractSort {
 
@@ -11,7 +11,7 @@ public class InsertionSort extends AbstractSort {
         for (int i = 1; i < arr.length; i++) {
             for (int l = i; l > 0; l--) {
                 if (arr[l] < arr[l - 1]) {
-                    MyArrayUtil.swap(arr, l, l - 1);
+                    ArrayUtil.swap(arr, l, l - 1);
                 }
             }
         }

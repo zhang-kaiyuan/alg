@@ -1,6 +1,6 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
-import com.kaiy.common.MyArrayUtil;
+import com.kaiy.common.ArrayUtil;
 import com.kaiy.dataStructure.Heap;
 
 public class HeapSort extends AbstractSort {
@@ -14,11 +14,11 @@ public class HeapSort extends AbstractSort {
             Heap.heapify(arr, i, arr.length);
         }
         int heapSize = arr.length;
-        MyArrayUtil.swap(arr, 0, --heapSize);
+        ArrayUtil.swap(arr, 0, --heapSize);
         // 第二遍循环 依次将最大值向最后移动 变成有序数组
         while (heapSize > 0) {
             Heap.heapify(arr, 0, heapSize);
-            MyArrayUtil.swap(arr, 0, --heapSize);
+            ArrayUtil.swap(arr, 0, --heapSize);
         }
 
     }

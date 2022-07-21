@@ -1,6 +1,7 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
-import com.kaiy.common.MyArrayUtil;
+import com.kaiy.common.ArrayUtil;
+import com.kaiy.common.IntUtil;
 
 public class QuickSort extends AbstractSort {
 
@@ -16,7 +17,7 @@ public class QuickSort extends AbstractSort {
         if (left >= right) {
             return;
         }
-        MyArrayUtil.swap(arr, left + MyArrayUtil.randomInt(right - left + 1), right);
+        ArrayUtil.swap(arr, left + IntUtil.randomInt(right - left + 1), right);
         int[] equalArea = partition(arr, left, right);
         sort(arr, left, equalArea[0] - 1);
         sort(arr, equalArea[1] + 1, right);
@@ -46,14 +47,14 @@ public class QuickSort extends AbstractSort {
             if (arr[index] == arr[right]) {
                 index++;
             } else if (arr[index] < arr[right]) {
-                MyArrayUtil.swap(arr, index++, ++less);
+                ArrayUtil.swap(arr, index++, ++less);
             } else {
                 // 这边是--more 不是more-- 理解为当前高位指针不变 前一位去交换
-                MyArrayUtil.swap(arr, index, --more);
+                ArrayUtil.swap(arr, index, --more);
             }
         }
         // 首先上面一直以R为样本 将R放入正确位置 其次more的第一个数移动到后面也是正确的
-        MyArrayUtil.swap(arr, more, right);
+        ArrayUtil.swap(arr, more, right);
         return new int[]{less + 1, more};
     }
 

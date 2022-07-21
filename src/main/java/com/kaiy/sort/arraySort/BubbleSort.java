@@ -1,6 +1,6 @@
-package com.kaiy.sort;
+package com.kaiy.sort.arraySort;
 
-import com.kaiy.common.MyArrayUtil;
+import com.kaiy.common.ArrayUtil;
 
 public class BubbleSort extends AbstractSort {
 
@@ -14,7 +14,7 @@ public class BubbleSort extends AbstractSort {
         for (int i = arr.length; i > 0; i--) {
             for (int j = 1; j < i; j++) {
                 if (arr[j] < arr[j - 1]) {
-                    MyArrayUtil.swap(arr, j, j-1);
+                    ArrayUtil.swap(arr, j, j-1);
                 }
             }
         }
