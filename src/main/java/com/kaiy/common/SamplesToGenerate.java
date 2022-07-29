@@ -1,6 +1,7 @@
 package com.kaiy.common;
 
 import com.kaiy.linked.Node;
+import com.kaiy.tree.TreeNode;
 
 public class SamplesToGenerate {
 
@@ -9,6 +10,8 @@ public class SamplesToGenerate {
 
     private static final int SAMPLE_SIZE = 10;
     private static final int SAMPLE_RANGE = 1000;
+    private static final int MAX_LEVEL = 7;
+
 
     public static int[] generateRandomArray(boolean negative) {
         int size = IntUtil.randomInt(SAMPLE_SIZE);
@@ -31,15 +34,22 @@ public class SamplesToGenerate {
         return head;
     }
 
-    public static void main(String[] args) {
-        Node node = generateRandomLinked();
-        int count = 0;
-        while (node != null) {
-            System.out.println(node.value);
-            node = node.next;
-            count++;
+    public static TreeNode generateRandomTree() {
+        return generateTree(1, MAX_LEVEL, SAMPLE_RANGE);
+    }
+
+    private static TreeNode generateTree(int level, int maxLevel, int maxValue) {
+        if (level > maxLevel || IntUtil.halfPoint()) {
+            return null;
         }
-        System.out.println("count: " + count);
+        TreeNode left = generateTree(level + 1, maxLevel, maxValue);
+        TreeNode right = generateTree(level + 1, maxLevel, maxValue);
+        return new TreeNode(IntUtil.randomIntContainsNegative(maxValue), left, right);
+    }
+
+    public static void main(String[] args) {
+        TreeNode treeNode = generateRandomTree();
+        TreeUtil.printTree(treeNode);
     }
 
 }

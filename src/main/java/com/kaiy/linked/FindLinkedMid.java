@@ -2,6 +2,9 @@ package com.kaiy.linked;
 
 import com.kaiy.common.SamplesToGenerate;
 
+/**
+ * 中点 （快慢指针）
+ */
 public class FindLinkedMid {
 
     /**

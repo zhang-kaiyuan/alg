@@ -3,6 +3,9 @@ package com.kaiy.sort.arraySort;
 import com.kaiy.common.ArrayUtil;
 import com.kaiy.dataStructure.Heap;
 
+/**
+ * 堆排序
+ */
 public class HeapSort extends AbstractSort {
 
     private static void heapSort(int[] arr) {

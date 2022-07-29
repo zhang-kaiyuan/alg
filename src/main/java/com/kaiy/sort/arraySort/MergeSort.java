@@ -1,5 +1,8 @@
 package com.kaiy.sort.arraySort;
 
+/**
+ * 归并排序
+ */
 public class MergeSort extends AbstractSort {
 
     private static void mergeSort(int[] arr) {

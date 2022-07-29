@@ -2,6 +2,9 @@ package com.kaiy.sort.arraySort;
 
 import com.kaiy.common.ArrayUtil;
 
+/**
+ * 选择排序
+ */
 public class SelectionSort extends AbstractSort {
 
     private static void selectionSort(int[] array) {

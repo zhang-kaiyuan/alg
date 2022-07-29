@@ -3,6 +3,9 @@ package com.kaiy.sort.arraySort;
 import com.kaiy.common.ArrayUtil;
 import com.kaiy.common.IntUtil;
 
+/**
+ * 快排
+ */
 public class QuickSort extends AbstractSort {
 
     private static void quickSort(int[] arr) {

@@ -2,6 +2,9 @@ package com.kaiy.sort.arraySort;
 
 import com.kaiy.common.ArrayUtil;
 
+/**
+ * 冒泡排序
+ */
 public class BubbleSort extends AbstractSort {
 
     private static void bubbleSort(int[] arr) {

@@ -2,6 +2,9 @@ package com.kaiy.sort.arraySort;
 
 import com.kaiy.common.ArrayUtil;
 
+/**
+ * 插入排序
+ */
 public class InsertionSort extends AbstractSort {
 
     private static void insertionSort(int[] arr) {

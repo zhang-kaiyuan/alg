@@ -18,6 +18,10 @@ public class IntUtil {
     }
 
     private static boolean whetherToGenerateNegative(boolean negative) {
-        return negative && (IntUtil.randomInt(2) & 1) == 1;
+        return negative && halfPoint();
+    }
+
+    public static boolean halfPoint() {
+        return (IntUtil.randomInt(2) & 1) == 1;
     }
 }

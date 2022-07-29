@@ -4,6 +4,9 @@ import com.kaiy.common.ArrayUtil;
 
 public class Heap {
 
+    private Heap() {
+    }
+
     public static void heapInsert(int[] arr, int index) {
         while (arr[index] > arr[(index - 1) / 2]) {
             ArrayUtil.swap(arr, index, (index -1) / 2);
